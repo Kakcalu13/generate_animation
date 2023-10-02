@@ -1,4 +1,4 @@
-1) make a video then put to smile/
+1) make a video and named it to here.mp4 then put to smile/
 2) python3 makepic.py
 3) use diff stable
 4) go to root then run ./test.sh (folder name)
