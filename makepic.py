@@ -3,7 +3,7 @@ import cv2
 import os
 
 # Read the video from specified path
-cam = cv2.VideoCapture("/Users/bwuk/Desktop/code/smile/here.mov")
+cam = cv2.VideoCapture("/home/bwuk/generate_animation/smile/here.mp4")
 
 try:
 
@@ -24,18 +24,15 @@ while (True):
     ret, frame = cam.read()
 
     if ret:
-        # if video is still left continue creating images
-        name = './data/frame' + str(currentframe) + '.png'
+        name = './data/frame{:06d}.png'.format(currentframe)
         print('Creating...' + name)
 
         # writing the extracted images
         cv2.imwrite(name, frame)
-
-        # increasing counter so that it will
-        # show how many frames are created
         currentframe += 1
     else:
         break
+
 
 # Release all space and windows once done
 cam.release()
