@@ -18,6 +18,6 @@ for file in "$input_folder"/*.png; do
     output_path="$output_folder/$new_filename"
     cp "$file" "$output_path"
     echo "Processed: $file -> $new_filename"
-    count=$ ((count + 1))
+    count=$((count + 1))
 done
 
