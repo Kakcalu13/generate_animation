@@ -3,7 +3,7 @@ import cv2
 import os
 
 # Read the video from specified path
-cam = cv2.VideoCapture("/home/bwuk/generate_animation/smile/here.mp4")
+cam = cv2.VideoCapture("smile/here.mp4")
 
 try:
 
