@@ -1,3 +1,12 @@
+# This is still WIP. You can still test it here! Welcome! 
+
+## Draft sample. STILL TUNING. Currently tested on M2 Mac only. Willing to work with you for windows 11 (i have w8) or linux! 
+
+
+https://github.com/Kakcalu13/generate_animation/assets/65916520/c4f15a8e-d703-45e6-9f13-948c43b8d938
+
+
+## Ugly instruction list. Please don't hestiate to open an issue if you happened to find here.
 1) make a video and named it to here.mp4 then put to smile/
 2) python3 makepic.py
 3) use diff stable
