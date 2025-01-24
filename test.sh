@@ -9,15 +9,13 @@ count=0
 count_files=$(find . -type f -name "*.png" | wc -l)
 total_files=$((count_files-1))
 num_digits=${#total_files}
-
-# Calculate the width for padding zeros
 width=$((num_digits > 4 ? num_digits : 4))
 
-for file in "$input_folder"/*.png; do
-    new_filename=$(printf "filename-%0*d.png" "$width" "$count")  # Updated format specifier
+# Sort files numerically by extracting and comparing the numbers
+for file in $(ls "$input_folder"/*.png | sort -t_ -k2 -n); do
+    new_filename=$(printf "filename-%0*d.png" "$width" "$count")
     output_path="$output_folder/$new_filename"
     cp "$file" "$output_path"
     echo "Processed: $file -> $new_filename"
     count=$((count + 1))
 done
-
